@@ -1,0 +1,24 @@
+{
+    "formatVersion":  1,
+    "id":  "rodaje-codificadores-gpl",
+    "version":  "0.2.0",
+    "kind":  "module",
+    "name":  "Codificadores GPL (x264 y x265)",
+    "description":  "Añade x264 y x265 (H.264 y HEVC, 8 y 10 bits) en Exportar → Avanzado con un ffmpeg.exe GPL aparte. Trae sus licencias (licencias/) y el LEEME con su código fuente y una nota sobre patentes.",
+    "author":  "Dathinel; FFmpeg compilado con los scripts de BtbN/FFmpeg-Builds",
+    "license":  "GPL-3.0-or-later",
+    "repository":  "https://github.com/Dathinel/rodaje-codificadores-gpl",
+    "apps":  [
+                 "rodaje"
+             ],
+    "module":  {
+                   "entry":  "bin/ffmpeg.exe",
+                   "protocol":  0,
+                   "functions":  [
+                                     "libx264",
+                                     "libx265"
+                                 ],
+                   "runtime":  "cpu",
+                   "vramMb":  0
+               }
+}
